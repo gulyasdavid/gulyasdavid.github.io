@@ -8,12 +8,19 @@
 </head>
 <body>
     <h1>Dinoszauruszok</h1>
-    <select name="" id="">
-        <option value="">Velociraptor</option>
-        <option value="">Tyrannosaurus</option>
-        <option value="">Brachiosaurus</option>
-        <option value="">Ankylosaurus</option>
-        <option value="">Pterodactylus</option>
+    <select name="" id="dinovalto" onchange="valtoztat()">
+        <option value="0">Velociraptor</option>
+        <option value="1" selected>Tyrannosaurus</option>
+        <option value="2">Brachiosaurus</option>
+        <option value="3">Ankylosaurus</option>
+        <option value="4">Pterodactylus</option>
     </select>
+    <h2 id="dinonev">Velociraptor</h2>
+    <script>
+        function valtoztat() {
+            var dinovarians=document.getElementById("dinovalto").value;
+            document.getElementById("dinonev").innerHTML = "proba";
+        }
+    </script>
 </body>
 </html>
