@@ -14,13 +14,6 @@
         <div class="col-sm-4">
         <h1>Dinoszauruszok</h1>
         <div id="doboz"></div>
-        <select name="" id="dinovalto" onchange="valtoztat()">
-        <option value="0">Velociraptor</option>
-        <option value="1" selected>Tyrannosaurus</option>
-        <option value="2">Brachiosaurus</option>
-        <option value="3">Ankylosaurus</option>
-        <option value="4">Pterodactylus</option>
-    </select>
     <h2 id="dinonev">Velociraptor</h2>
     <img src="kepek/.jpg" alt="" id="dinokep" class="img-fluid">
     <p id="dinoszoveg"></p>
@@ -45,7 +38,7 @@
         leirastomb.push("A Velociraptor (nevének jelentése: 'gyors rabló', a latin velox 'gyors' és raptor 'rabló', 'fosztogató' szavak összetételéből[1]) a theropoda alrendbe tartozó Dromaeosauridae család legismertebb neme, amely körülbelül 75–71 millió évvel ezelőtt élt, a késő kréta kor végén.[2] Jelenleg két faja ismert, de korábban több fajt is ebbe a nembe soroltak be. Típusfaja a V. mongoliensis, melynek fosszíliáit a közép-ázsiai Mongólia területén találták meg. A második fajt, a V. osmolskae-t 2008-ban nevezték el egy belső-mongóliai koponya alapján.")
         //select összeépítése
         var szoveg="";
-        szoveg+='<select>';
+        szoveg+='<select id="dinovalto" onchange="valtoztat">';
         var sorszam=0;
         for (elem of dintotomb){
             szoveg+='<option value="'+sorszam+'">'+elem+'</option>';
@@ -53,7 +46,6 @@
         }
         szoveg+='</select>';
         document.getElementById("doboz").innerHTML=szoveg;
-        /*
         valtoztat();
         function valtoztat() {
             var dinovarians=document.getElementById("dinovalto").value;
@@ -61,7 +53,6 @@
             document.getElementById("dinokep").src="kepek/"+dinovarians+".jpg";
             document.getElementById("dinoszoveg").innerHTML=leirastomb[dinovarians];
         }
-        */
     </script>
 </body>
 </html>
