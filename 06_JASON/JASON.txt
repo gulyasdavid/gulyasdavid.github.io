@@ -1,0 +1,16 @@
+1.
+Random t�mb, 100 �s 1000 k�z�tti term�k �rak! 20 darab-ot.
+1. Ki�rat�s konzolra!
+2. -K�rj be egy sz�mot, h�ny term�k olcs�bb.
+3. -Maximumot �rasd ki!
+4. -term�kek �r�nak �tlag�t!
+n
+2. 
+term�kek neve �s �ra, jsonban, programban adjuk meg a t�mb�t
+1. Ki�rat�s konzolra!
+2. -k�rj be egy sz�t, ami tartalmazza a nev�t pl. ceruza, abb�l h�ny van
+(gugli: includes vagy indexof fuggveny)
+3. -�rja ki a nev�ket al�
+4. -ezek �r�t k�l�n t�mbbe tegye(�rak kiv�logat�sa)
+5. -sz�molja meg a pl. ceruz�k �tlag�r�t
+6. -�rja ki a pl. ceruz�k k�z�l a legolcs�bbat

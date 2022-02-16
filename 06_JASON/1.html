@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Konzolos JavaScript</h1>
+    <script>
+        var tomb = [];
+        for (let i = 0; i < 20; i++)
+        {
+            tomb.push(Math.floor(Math.random() * 901) + 100);
+        }
+        console.log(tomb);
+        var szam = prompt("Kérek egy számot!");
+        var db = 0;
+        for (elem of tomb)
+        {
+            if(elem < szam)
+            {
+                db++;
+            }
+        }
+        console.log("A megadott számtól olcsóbb termékek száma: " + db);
+        //Maximum:
+        seged = 0;
+        for (elem of tomb)
+        {
+            if (elem > seged)
+            {
+                seged = elem;
+
+            }
+        }
+        console.log("Maximum " + seged);
+        //Átlag:
+        var osszeg = 0;
+        for (elem of tomb)
+        {
+            osszeg += elem;
+        }
+        console.log("Átlag: " + osszeg / tomb.length);
+    </script>
+</body>
+</html>
