@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1>Javascript függvények</h1>
+
+<script>
+    function osszead(a,b){
+        return a+b;
+    }
+
+function osszead2(a,b){
+    console.log("Két szám összege return nélkül: " + (a+b));
+}
+
+function csillagok(szam)
+{
+    for (let i = 0; i < szam; i++){
+        ossz+=karakter;
+    }
+    return ossz;
+}
+
+function szamjegyosszeg(szamjegyek)
+{
+    var osszeg=0;
+    for (elem of szamjegyek){
+        osszeg+=parseInt(elem);
+    }
+    return osszeg;
+}
+
+function sokszamosszead(){
+    var osszeg=0;
+    for (elem of arguments){
+        osszeg+=elem;
+    }
+}
+//legnagyobb szám kiválasztása -arguments
+function legnagyobb(){
+    var legn=0;
+    for (elem of arguments){
+        if (elem>legn){
+            legn=elem;
+        }
+    }
+    return legn;
+}
+//-----------------------------
+
+console.log("Két szám összege returnnel: " + osszead(2,3));
+osszead2(3,4);
+console.log(csillagok(5,"*"))
+console.log(csillagok(100,"-"))
+console.log("Számjegyek összege, 123456-nak: "+szamjegyosszeg("123456"))
+console.log("Arguments tömb használatával összeadás: " + sokszamosszead(1,2,3,4));
+console.log("Számjegyek összege, 123456-nak: "+legnagyobb("123456"))
+console.log("Arguments tömb használatával összeadás: " + legnagyobb(1,2,3,4));
+</script>
+
+</body>
+</html>
