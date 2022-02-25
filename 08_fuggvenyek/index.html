@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var szemely1={
+            "vnev":"Fehér",
+            "knev":"Ferenc",
+            "kor":25,
+            "teljesnev":function(){
+                return this.knev+" "+this.knev;
+            }
+        }
+        console.log("Személy vezetékneve:"+szemely1.vnev);
+        console.log("Teljes név: "+szemely1.teljesnev());
+
+        //---------------------------------------------------------
+
+        function osszead(szam1,szam2){
+            return szam1+szam2;
+        }
+
+        console.log("Két szám összege: " + osszead(2,3));
+
+        var osszead_nyil=(szam1,szam2)=>szam1+szam2;
+
+        console.log("Két szám összeg nyíl függvénnyel: "+osszead_nyil(2,3));
+
+        //bemenet: 5, * kimenet: ***** , NYÍL függvénnyel:
+
+        var csillag=(szam,karakter)=>{
+            var sz="";
+            for (let i = 0; i < szam; i++) {
+                sz+=karakter;
+            }
+            return sz;
+        }
+
+        console.log("Karakterek összefűzése: " + csillag(5,"*"));
+
+        //bemenet: "1234" kimenet: 10, NYÍL függvénnyel
+        var szamokossze=(szamjegyek)=>{
+            var ossz=0;
+            for (elem of szamjegyek){
+                ossz+parseInt(elem);
+            }
+            return ossz;
+        }
+        
+        console.log("Számjegyek összeadása: " + szamokossze("1234"));
+    </script>
+</body>
+</html>
