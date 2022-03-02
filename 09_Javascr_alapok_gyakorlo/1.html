@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Negatív vagy pozitív</title>
+</head>
+<body>
+<script>
+    var szoveg = prompt("Adj meg két számot!");
+    var kecske=szoveg.split(' ');
+    var szam1=parseInt(kecske[0]);
+    var szam2=parseInt(kecske[1]);
+    if (szam1 > 0 && szam2 > 0) {console.log("Mindkettő pozitív!");}
+    else if (szam1 < 0 && szam2 < 0) {console.log("Mindkettő negatív!");}
+    else {console.log("Egyik pozitív, másik negatív!");}
+
+</script>
+</body>
+</html>

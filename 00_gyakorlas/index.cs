@@ -260,4 +260,32 @@ public class Program
         Console.WriteLine(x < y);
         Console.WriteLine(x < f);
     }
+    int i = 10, j = 20;
+    if (i < j)
+    {
+        Console.WriteLine("i is less than j");
+    }
+    if (i > j)
+    {
+        Console.WriteLine("i is greater than j");
+    }
+    /*
+    int i = 10, j = 20;
+    if (i + 1)
+    {
+        Console.WriteLine("i is less than j");
+    }
+    if (i + j)
+    {
+        Console.WriteLine("i is greater than j");
+    }
+    */
+    static void Main(string[] args)
+    {
+        int i = 10, j = 20;
+        if (isGreater(i, j))
+        {
+            Console.W
+        }
+    }
 }
