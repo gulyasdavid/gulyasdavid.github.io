@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Konzol</h1>
+<script>
+    var tomb = [
+        {'termeknev': 'ceruza 12 szinu', 'termekara': 860 },
+        {'termeknev': 'papir 12 szinu', 'termekara': 960 },
+        {'termeknev': 'toll 12 szinu', 'termekara': 560 },
+        {'termeknev': 'irolap 12 szinu', 'termekara': 760 },
+        {'termeknev': 'kijelolo 12 szinu', 'termekara': 460 },
+    ];
+    console.log(tomb);
+    var szo = prompt("Adj meg egy szót!");
+    var db = 0;
+    for (elem of tomb){
+        if(elem.termeknev.includes(szo)){
+            db++
+        }
+    }
+console.log("Ennyi: " + db);
+</script>
+</body>
+</html>

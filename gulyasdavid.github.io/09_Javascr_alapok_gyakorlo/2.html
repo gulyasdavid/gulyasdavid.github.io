@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Könyvek adatai</title>
+</head>
+<body>
+    <h1>Konzol</h1>
+
+<script>
+    var tomb = [
+        {'konyvcim': 'Víz', 'konyviro': 'Minta Dávid', 'konyvhossz': 200},
+        {'konyvcim': 'Tűz', 'konyviro': 'Minta Ágnes', 'konyvhossz': 250},
+        {'konyvcim': 'Levegő', 'konyviro': 'Minta Margit', 'konyvhossz': 300}
+    ];
+    console.log(tomb);
+    db=0;
+    for (elem of tomb){
+        if(elem.konyvhossz){
+            db++;
+        }
+    }
+
+console.log("A leghosszabb könyv terjedelme: "+ db[2]);
+
+</script>
+
+    
+</body>
+</html>

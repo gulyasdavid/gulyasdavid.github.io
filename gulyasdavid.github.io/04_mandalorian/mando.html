@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mando</title>
+</head>
+<body>
+    <img src="kepek/0.jpg" id="kep0" style="width:100px" onclick="nagykep(0)">
+    <img src="kepek/1.jpg" id="kep1" style="width:100px" onclick="nagykep(1)">
+    <img src="kepek/2.jpg" id="kep2" style="width:100px" onclick="nagykep(2)">
+    <img src="kepek/3.jpg" id="kep3" style="width:100px" onclick="nagykep(3)">
+    <img src="kepek/4.jpg" id="kep4" style="width:100px" onclick="nagykep(4)">
+    <br>
+    <img src="" style="width:500px" id="kephelye">
+    <script>
+        function nagykep(szam) {
+            document.getElementById("kep"+szam).style.border="10px solid black";
+            document.getElementById("kephelye").src="kepek/"+szam+".jpg";
+        }
+    </script>
+</body>
+</html>
