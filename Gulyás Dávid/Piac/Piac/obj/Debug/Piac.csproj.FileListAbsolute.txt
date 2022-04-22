@@ -1,0 +1,7 @@
+C:\Users\tanulo\Desktop\Piac\Piac\bin\Debug\Piac.exe.config
+C:\Users\tanulo\Desktop\Piac\Piac\bin\Debug\Piac.exe
+C:\Users\tanulo\Desktop\Piac\Piac\bin\Debug\Piac.pdb
+C:\Users\tanulo\Desktop\Piac\Piac\obj\Debug\Piac.csprojAssemblyReference.cache
+C:\Users\tanulo\Desktop\Piac\Piac\obj\Debug\Piac.csproj.CoreCompileInputs.cache
+C:\Users\tanulo\Desktop\Piac\Piac\obj\Debug\Piac.exe
+C:\Users\tanulo\Desktop\Piac\Piac\obj\Debug\Piac.pdb

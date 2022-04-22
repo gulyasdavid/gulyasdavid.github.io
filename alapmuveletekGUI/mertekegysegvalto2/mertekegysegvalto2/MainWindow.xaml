@@ -1,0 +1,138 @@
+﻿<Window x:Class="mertekegysegvalto2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:mertekegysegvalto2"
+        mc:Ignorable="d"
+        Title="Mértékegyátváltó program" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="102*"/>
+            <ColumnDefinition Width="35*"/>
+            <ColumnDefinition Width="263*"/>
+        </Grid.ColumnDefinitions>
+        <TabControl Grid.ColumnSpan="3">
+            <TabItem Header="Idő">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1">
+                        <GradientStop Color="#FFF0F0F0"/>
+                        <GradientStop Color="#FFD3D420" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <Grid Background="#FFE5E5E5">
+                    <TextBox Name="tbidoertek" HorizontalAlignment="Left" Margin="117,96,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120"/>
+                    <Label Name="lbidoertek" Content="Érték" HorizontalAlignment="Left" Margin="44,96,0,0" VerticalAlignment="Top"/>
+                    <Label Name="lbidomibol" Content="Miből" HorizontalAlignment="Left" Margin="44,127,0,0" VerticalAlignment="Top"/>
+                    <ComboBox Name="cbido1" HorizontalAlignment="Left" Margin="117,124,0,0" VerticalAlignment="Top" Width="120">
+                        <ComboBoxItem Content="másodperc"/>
+                        <ComboBoxItem Content="perc"/>
+                        <ComboBoxItem Content="óra"/>
+                        <ComboBoxItem Content="nap"/>
+                        <ComboBoxItem Content="hét"/>
+                    </ComboBox>
+                    <Label Name="lbidomibe" Content="Mibe" HorizontalAlignment="Left" Margin="271,122,0,0" VerticalAlignment="Top"/>
+                    <ComboBox Name="cbido2" HorizontalAlignment="Left" Margin="313,124,0,0" VerticalAlignment="Top" Width="120">
+                        <ComboBoxItem Content="másodperc"/>
+                        <ComboBoxItem Content="perc"/>
+                        <ComboBoxItem Content="óra"/>
+                        <ComboBoxItem Content="nap"/>
+                        <ComboBoxItem Content="hét"/>
+                    </ComboBox>
+                    <Button Name="btido" Content="Számítás" HorizontalAlignment="Left" Margin="241,183,0,0" VerticalAlignment="Top" Width="67" Click="btido_Click"/>
+                    <Label Name="lbidoeredmeny" Content="Eredmény" HorizontalAlignment="Left" Margin="187,217,0,0" VerticalAlignment="Top"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Hosszúság">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1">
+                        <GradientStop Color="#FFF0F0F0"/>
+                        <GradientStop Color="#FF79CC18" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <Grid Background="#FFE5E5E5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="114*"/>
+                        <ColumnDefinition Width="9*"/>
+                        <ColumnDefinition Width="671*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBox Name="tbhosszertek" HorizontalAlignment="Left" Margin="3,96,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120" Grid.Column="1" Grid.ColumnSpan="2"/>
+                    <Label Content="Érték" Name="lbhosszertek" HorizontalAlignment="Left" Margin="44,96,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Miből" Name="lbhosszomibol" HorizontalAlignment="Left" Margin="44,127,0,0" VerticalAlignment="Top"/>
+                    <ComboBox Name="cbhossz1" HorizontalAlignment="Left" Margin="3,124,0,0" VerticalAlignment="Top" Width="120" Grid.Column="1" Grid.ColumnSpan="2">
+                        <ComboBoxItem Content="miliméter"/>
+                        <ComboBoxItem Content="centiméter"/>
+                        <ComboBoxItem Content="deciméter"/>
+                        <ComboBoxItem Content="méter"/>
+                        <ComboBoxItem Content="kilométer"/>
+                    </ComboBox>
+                    <Label Name="lbhosszmibe" Content="Mibe" HorizontalAlignment="Left" Margin="148,122,0,0" VerticalAlignment="Top" Grid.Column="2"/>
+                    <ComboBox Name="cbhossz2" HorizontalAlignment="Left" Margin="190,124,0,0" VerticalAlignment="Top" Width="120" Grid.Column="2">
+                        <ComboBoxItem Content="miliméter"/>
+                        <ComboBoxItem Content="centiméter"/>
+                        <ComboBoxItem Content="deciméter"/>
+                        <ComboBoxItem Content="méter"/>
+                        <ComboBoxItem Content="kilométer"/>
+                    </ComboBox>
+                    <Button Name="bthossz" Content="Számítás" HorizontalAlignment="Left" Margin="118,183,0,0" VerticalAlignment="Top" Width="67" Click="bthossz_Click" Grid.Column="2"/>
+                    <Label Name="lbhosszeredmeny" Content="Eredmény" HorizontalAlignment="Left" Margin="64,217,0,0" VerticalAlignment="Top" Grid.Column="2"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Tömeg">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1">
+                        <GradientStop Color="#FFF0F0F0"/>
+                        <GradientStop Color="#FF3099AD" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <Grid Background="#FFE5E5E5">
+                    <TextBox Name="tbtomegertek" HorizontalAlignment="Left" Margin="117,96,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120"/>
+                    <Label Name="lbtomegertek" Content="Érték" HorizontalAlignment="Left" Margin="44,96,0,0" VerticalAlignment="Top"/>
+                    <Label Name="lbtomegmibol" Content="Miből" HorizontalAlignment="Left" Margin="44,127,0,0" VerticalAlignment="Top"/>
+                    <ComboBox Name="cbtomeg1" HorizontalAlignment="Left" Margin="117,124,0,0" VerticalAlignment="Top" Width="120">
+                        <ComboBoxItem Content="miligramm"/>
+                        <ComboBoxItem Content="gramm"/>
+                        <ComboBoxItem Content="dekagramm"/>
+                        <ComboBoxItem Content="kilogramm"/>
+                        <ComboBoxItem Content="tonna"/>
+                    </ComboBox>
+                    <Label Name="lbtomegmibe" Content="Mibe" HorizontalAlignment="Left" Margin="271,122,0,0" VerticalAlignment="Top"/>
+                    <ComboBox Name="cbtomeg2" HorizontalAlignment="Left" Margin="313,124,0,0" VerticalAlignment="Top" Width="120">
+                        <ComboBoxItem Content="miligramm"/>
+                        <ComboBoxItem Content="gramm"/>
+                        <ComboBoxItem Content="dekagramm"/>
+                        <ComboBoxItem Content="kilogramm"/>
+                        <ComboBoxItem Content="tonna"/>
+                    </ComboBox>
+                    <Button Name="bttomeg" Content="Számítás" HorizontalAlignment="Left" Margin="241,183,0,0" VerticalAlignment="Top" Width="67" Click="bttomeg_Click"/>
+                    <Label Name="lbtomegeredmeny" Content="Eredmény" HorizontalAlignment="Left" Margin="187,217,0,0" VerticalAlignment="Top"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Űrmérték">
+                <Grid Background="#FFE5E5E5">
+                    <TextBox Name="tburertek" HorizontalAlignment="Left" Margin="117,96,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120"/>
+                    <Label Name="lburertek" Content="Érték" HorizontalAlignment="Left" Margin="44,96,0,0" VerticalAlignment="Top"/>
+                    <Label Name="tburmibol" Content="Miből" HorizontalAlignment="Left" Margin="44,127,0,0" VerticalAlignment="Top"/>
+                    <ComboBox Name="cbur1" HorizontalAlignment="Left" Margin="117,124,0,0" VerticalAlignment="Top" Width="120">
+                        <ComboBoxItem Content="mililiter"/>
+                        <ComboBoxItem Content="centiliter"/>
+                        <ComboBoxItem Content="deciliter"/>
+                        <ComboBoxItem Content="liter"/>
+                        <ComboBoxItem Content="hektoliter"/>
+                    </ComboBox>
+                    <Label Name="lburmibe" Content="Mibe" HorizontalAlignment="Left" Margin="271,122,0,0" VerticalAlignment="Top"/>
+                    <ComboBox Name="cbur2" HorizontalAlignment="Left" Margin="313,124,0,0" VerticalAlignment="Top" Width="120">
+                        <ComboBoxItem Content="mililiter"/>
+                        <ComboBoxItem Content="centiliter"/>
+                        <ComboBoxItem Content="deciliter"/>
+                        <ComboBoxItem Content="liter"/>
+                        <ComboBoxItem Content="hektoliter"/>
+                    </ComboBox>
+                    <Button Name="btur" Content="Számítás" HorizontalAlignment="Left" Margin="241,183,0,0" VerticalAlignment="Top" Width="67" Click="btur_Click"/>
+                    <Label Name="lbureredmeny" Content="Eredmény" HorizontalAlignment="Left" Margin="187,217,0,0" VerticalAlignment="Top"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>

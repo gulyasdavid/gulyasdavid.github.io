@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="adatok.js"></script>
+    <title>Feladat</title>
+</head>
+<body>
+    <table class="table table-dark">
+        <thead>
+          <tr>
+            <th>Név</th>
+            <th>Elkészítés</th>
+            <th>Kép</th>
+            <th>Elkészítési</th>
+          </tr>
+        </thead>
+        <tbody id="tablazattorzs">
+
+        </tbody>
+      </table>
+    <script>
+        console.log(adatok);
+        var sz="";
+        for (var elem of adatok) {
+            sz+='<tr>';
+            //--------------------------------------1. oszlop
+            sz+='<td>';
+            sz+=elem.name;
+            sz+='</td>';
+            //--------------------------------------2. oszlop
+            sz+='<td>';
+            sz+=elem.name;
+            sz+='</td>';
+            //--------------------------------------3. oszlop
+            sz+='<td>';
+            sz+=elem.name;
+            sz+='</td>';
+            //--------------------------------------4. oszlop
+            var osszeg=0;
+            for (szam of elem.timers)
+            {
+                osszeg+=szam;
+            }
+            sz+='<td>';
+            sz+=osszeg;
+            sz+='<span style="font-weight:bold;color:blue;font-size:25px">'+osszeg+'</span>';
+            sz+='</td>';
+            //--------------------------------------5. oszlop
+            sz+='<td>';
+            sz+='<ul>';
+            for (lepesek of elem.steps)
+            {
+                sz+='<li>';
+                sz+=lepesek;
+                sz+='</li>';
+            }
+            sz+='</ul>';
+            sz+='</td>';
+            sz+='</tr>';
+        }
+        document.getElementById("tablazattorzs").innerHTML=sz;
+    </script>
+</body>
+</html>

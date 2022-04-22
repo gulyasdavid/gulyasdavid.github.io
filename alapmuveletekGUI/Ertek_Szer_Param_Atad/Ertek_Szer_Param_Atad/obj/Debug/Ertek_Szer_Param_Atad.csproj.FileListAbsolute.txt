@@ -1,0 +1,3 @@
+C:\Users\tanulo\Desktop\alapmuveletekGUI\Ertek_Szer_Param_Atad\Ertek_Szer_Param_Atad\obj\Debug\Ertek_Szer_Param_Atad.csproj.AssemblyReference.cache
+C:\Users\tanulo\Desktop\alapmuveletekGUI\Ertek_Szer_Param_Atad\Ertek_Szer_Param_Atad\obj\Debug\Ertek_Szer_Param_Atad.csproj.SuggestedBindingRedirects.cache
+C:\Users\tanulo\Desktop\alapmuveletekGUI\Ertek_Szer_Param_Atad\Ertek_Szer_Param_Atad\obj\Debug\Ertek_Szer_Param_Atad.csproj.CoreCompileInputs.cache
