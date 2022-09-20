@@ -1,0 +1,11 @@
+#stilus {
+    border-style: solid;
+    border-width: medium;
+    padding: 10px;
+    margin: 10px;
+    background-color: green;
+    box-shadow: yellow;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Times New Roman";
+}
